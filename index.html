@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/330e5f893a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3" style="height: 1000px; background: #313844; color: gainsboro;">
+        <ul style="color: w;">
+          <header style="text-align: center ; margin-top: 14px; font-size: 20px;">&nbsp; SISFAC
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-bars"></i>
+          </header>
+          <hr>
+          <li i class="fas fa-desktop">&nbsp; Inicio</li>
+          <hr>
+          <li i class="fas fa-file-alt">&nbsp; Mantinimiento &nbsp;&nbsp;<i class="fas fa-angle-right"></i></li>
+          <hr>
+          <li i class="fas fa-ticket-alt">&nbsp; Ventas
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+              class="fas fa-angle-right"></i></li>
+          <hr>
+          <li i class="fas fa-pen">&nbsp; Compras</li>
+          <hr>
+          <li i class="fas fa-chart-bar">&nbsp; Reportes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+              class="fas fa-angle-right"></i></li>
+          <hr>
+          <li i class="fas fa-database">&nbsp; Backup</li>
+          <hr>
+          <li i class="fas fa-tools">&nbsp; Configuracion</li>
+          <hr>
+          <li i class="fas fa-sign-out-alt">&nbsp; Cerrar Sesion</li>
+        </ul>
+      </div>
+
+      <div class="col-md-9">
+        <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;admin <i class="fas fa-user-shield" style="color: black; margin-top: 14px;"></i></h6>
+        <hr>
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nueva compra</h4>
+        <div class="row" style="margin-left: 20px;">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Fecha: </label>
+                  <input type="text" class="form-control">
+                </div>
+
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Proveedor: </label>
+                  <input type="text" class="form-control">
+                </div>
+
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Codigo: </label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Descripcion: </label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Presentacion: </label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Precio: </label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <button class="btn  btn-sm " style="background:  #20b0ed; color: white;"><i class="fas fa-sync-alt"></i>
+                  &nbsp;Nuevo</button>
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-sm " style="background: #08a95b; color: white;"><i
+                    class="fas fa-shopping-cart"></i> &nbsp;Agregar</button>
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-sm" style="background:  #30384f; color: white;"><i class="far fa-save"></i>
+                  &nbsp;Registrar</button>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div style="border: 1px solid gainsboro; height: 150px;width: 250px; margin-left: 80px;">
+              <div class="col-md-12" style="background: #d4e8d4; ;">Tipo Documento</div>
+
+              <div class="col-md-12" name="Factura" style="margin-top: 20px;">
+                <select name="Factura" id="" style="width: 100%;">
+                  <option value="A" style="color: gray;">Factura</option>
+                  <option value="B" style="color: gray;">Boleta </style>
+                  </option>
+                </select>
+
+              </div>
+              <div class="row" style="margin-top: 20px; margin: 10px; " >
+
+                <div class="col-md-6">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="row" style="margin-top: -550px; margin-left: 590px; width: 1200px;">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-stripped table-bordered table-hover">
+                <tr style="background:#d4e8d4; color: gray;">
+                    <th>Item</th>
+                    <th>Descripcion</th>
+                    <th>Presentacion</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Importe</th>
+                    <th>Eliminar</th>
+                </tr>
+
+                <tr style="color:gray;">
+                    <td>1</td>
+                    <td>Gaseosa Inka Kola</td>
+                    <td>LT</td>
+                    <td>40</td>
+                    <td>1.20</td>
+                    <td>48.00</td>
+                    <td><section class="menos"><i class="fas fa-minus-square" style="color: red;"></i></section></td>
+                </tr>
+
+                <tr style="color:gray;">
+                    <td>2</td>
+                    <td>Agua mineral San Mateo</td>
+                    <td>LT</td>
+                    <td>50</td>
+                    <td>1.20</td>
+                    <td >60.00</td>
+                    <td><section class="menos"><i class="fas fa-minus-square" style="color: red;"></i></section></td>
+                </tr>
+            </table>
+        </div>
+         
+        </div>
+      </div>
+      <div class="row" style="margin-top: -250px; margin-left: 1300px;">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class=" table table-stripped table-bordered table-hover">
+            <tr>
+                    <th style="color:gray;">SUBTOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 108.00</th>    
+            </tr>
+            <tr>
+                <th style="color:gray;">IGV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19.44</th><br>
+            </tr>
+            <tr></tr>
+            <th style="background:#d4e8d4; color: gray;">TOTAL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 127.44</th>
+            </table>
+        </section>
+        </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+  </header>
+  <section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
